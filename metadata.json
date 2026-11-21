@@ -1,0 +1,8 @@
+{
+  "name": "TTU HUB",
+  "description": "TTU HUB — One University. One Connected Experience. Digital academic, community, and campus services platform for Taita Taveta University.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

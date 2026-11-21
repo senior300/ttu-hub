@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --brand-obsidian: #0C2924;
+    --brand-obsidian-hover: #143D35;
+    --brand-teal: #0F766E;
+    --brand-teal-bright: #0D9488;
+    --brand-gold: #B45309;
+    --canvas: #F7F6F2;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--canvas);
+    color: var(--brand-obsidian);
+  }
+
+  ::selection {
+    background-color: #CCFBF1;
+    color: #0C2924;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Leaflet container layering so modals/drawers never fall behind map tiles */
+.leaflet-container {
+  z-index: 1;
+  font-family: var(--font-sans);
+}
